@@ -133,6 +133,8 @@ h2::after {
     border: var(--border-thick) solid var(--steel);
     padding: 35px;
     box-shadow: 10px 10px 0px var(--steel); /* Brutalist builder shadow */
+    display: flex;
+    flex-direction: column;
 }
 
 .card h3 {
@@ -152,6 +154,7 @@ h2::after {
     width: 100%;
     height: auto;
     border: 2px solid var(--steel);
+    order: -1;
 }
 
 .card ul {
