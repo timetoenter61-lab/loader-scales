@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Loader Scales - Your premiere solution for precision loading and weighing systems.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Loader Scales - Precision Weighing Solutions">
+    <meta property="og:description" content="Welcome to Loader Scales - Your premiere solution for precision loading and weighing systems.">
+    <meta property="og:image" content="introduction.jpg">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#000000">
+    <title>Loader Scales - Introduction</title>
+</head>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+    <!-- Page Intro Splash -->
+    <div id="intro-splash" style="position: fixed; width: 100%; height: 100%; background: #000; z-index: 9999; transition: opacity 1s; display: flex; align-items: center; justify-content: center;">
+        <!-- Centered Image Container -->
+        <img src="introduction.jpg" alt="Loader Scales Introduction" style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 10px;" />
+        
+        <!-- The crucial skip button -->
+        <button onclick="closeSplash()" style="position: absolute; bottom: 20px; right: 20px; padding: 10px 20px; font-size: 16px; background: rgba(255,255,255,0.9); color: #000; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Skip to Website</button>
+    </div>
+
+    <script>
+        // Automatically fade out after 7 seconds
+        setTimeout(closeSplash, 7000); 
+
+        function closeSplash() {
+            const splash = document.getElementById('intro-splash');
+            splash.style.opacity = '0';
+            splash.style.pointerEvents = 'none';
+            setTimeout(() => {
+                splash.style.display = 'none';
+                window.location.href = 'index.html'; // Redirect to index page
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
