@@ -89,6 +89,31 @@ body {
     transition: transform 0.05s ease;
 }
 
+.btn-info-corner {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-trade);
+    color: var(--plaster);
+    text-decoration: none;
+    font-size: 2.5rem;
+    border: var(--border-thick) solid var(--primary-trade);
+    border-radius: 50%;
+    z-index: 1000;
+    transition: transform 0.05s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-info-corner:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .btn-primary {
     background-color: var(--primary-trade);
     color: var(--plaster);
@@ -139,7 +164,7 @@ h2::after {
 
 .card h3 {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: var(--steel);
 }
 
@@ -153,8 +178,19 @@ h2::after {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
     border: 2px solid var(--steel);
     order: -1;
+    object-fit: cover;
+}
+
+.card-image-bottom {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 2px solid var(--steel);
+    object-fit: cover;
 }
 
 .card ul {
